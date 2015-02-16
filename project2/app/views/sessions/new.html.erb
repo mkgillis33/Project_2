@@ -1,0 +1,7 @@
+<h1> Enter your Zipcode, dude </h1>
+
+<%= form_for @user, html:{url: session_path} do |f| %>
+    <%= f.text_field :email %><br />
+    <%= f.password_field :password %><br />
+    <%= f.submit %>
+<% end %>
